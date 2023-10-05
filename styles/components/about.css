@@ -79,6 +79,12 @@
 /* xs */
 @media (min-width: 475px) {
 
+
+    .tech-img {
+        height: 100%;
+        width: 100%;
+    }
+
     .tech-container {
         gap: 1rem;
     }
