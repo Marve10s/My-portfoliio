@@ -34,7 +34,7 @@
 }
 
 .tech-img {
-    height: 100%;
+    height: 50%;
 }
 
 .about-subtitle {
@@ -69,6 +69,7 @@
 /* xs */
 @media (min-width: 475px) {
     .tech-container {
+        height: 100%;
         gap: 1rem;
     }
 }
