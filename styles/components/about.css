@@ -29,8 +29,8 @@
 .tech-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: max-content;
-    gap: 1rem;
+    grid-template-rows: min-content;
+    gap: .5rem;
 }
 
 .tech-img {
@@ -64,6 +64,13 @@
 .about-ul_container {
     display: flex;
     justify-content: space-between;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .tech-container {
+        gap: 1rem;
+    }
 }
 
 /* sm */
