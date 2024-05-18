@@ -1,341 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.svg">
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap" rel="stylesheet">
-    <meta name="description" content="My portfolio website">
-    <meta name="keywords" content="Portfolio ,Frontend, CSS,html,JS,">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My portfolio website" />
+    <meta name="keywords" content="Portfolio ,Frontend, CSS,html,JS," />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header container">
-        <nav>
-            <ul class="header-menu">
-                <li>
-                    <a class="header-link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="header-link" href="#featured">Work</a>
-                </li>
-                <li>
-                    <a class="header-link" href="#contact">Contact</a>
-                </li>
-                <li class="header-line"></li>
-                <li>
-                    <button aria-label="theme-toogle btn" id="theme-toggle" class="header-sun">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <a class="header-resume btn" href="#">Resume (in progress)</a>
-                </li>
-            </ul>
-            <button aria-label="mobile nav button" class="header-bars">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+      <nav>
+        <ul class="header-menu">
+          <li>
+            <a class="header-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header-link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header-link" href="#contact">Contact</a>
+          </li>
+          <li class="header-line"></li>
+          <li>
+            <button
+              aria-label="theme-toogle btn"
+              id="theme-toggle"
+              class="header-sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
             </button>
-        </nav>
+          </li>
+          <li>
+            <a class="header-resume btn" href="#">Resume (in progress)</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header-bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
     </header>
     <!-- Mobile navigaton  -->
     <div class="mobile-nav">
-        <nav>
-            <ul class="mobile-nav_menu">
-                <li>
-                    <a class="mobile-nav_link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="mobile-nav_link" href="#featured">Work</a>
-                </li>
-                <li>
-                    <a class="mobile-nav_link" href="#contact">contact</a>
-                </li>
-                <li class="mobile-nav_link__line"></li>
-                <li>
-                    <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav_sun">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <a class="mobile-nav_btn btn" href="#">Resume (in progress)</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="mobile-nav_menu">
+          <li>
+            <a class="mobile-nav_link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav_link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav_link" href="#contact">contact</a>
+          </li>
+          <li class="mobile-nav_link__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav_sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav_btn btn" href="#">Resume (in progress)</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <!-- End navigaton  -->
     <main>
-        <section class="wc container">
-            <img class="wc-img" src="/portfolio.jpg" alt="Profile photo">
-            <h2 class="wc-subtitle">Hi,I'm Ibragim</h2>
-            <h1 class="wc-title">FRONT-END WEB <br> DEVELOPER.</h1>
-            <p class="wc-description">Welcome to my portfolio website ! If you looking for young
-                frontend web developer enthusiast specialized in building stunning interactive websites -
-                you find him.
+      <section class="wc container">
+        <img class="wc-img" src="/avatar.png" alt="Profile photo" />
+        <h2 class="wc-subtitle">Hi,I'm Ibragim</h2>
+        <h1 class="wc-title">
+          FRONT-END WEB <br />
+          DEVELOPER.
+        </h1>
+        <p class="wc-description">
+          Welcome to my portfolio website ! If you looking for young frontend
+          web developer enthusiast specialized in building stunning interactive
+          websites - you find him.
+        </p>
+        <a class="wc-btn btn" href="#contact">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about-container">
+          <div class="about-description">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">
+              Hello there! I'm Ibragim, a
+              <strong>Front-End Web developer</strong> from Ukraine, Odesa.
             </p>
-            <a class="wc-btn btn" href="#contact">Reach out</a>
-        </section>
-        <section id="about" class="about container section">
-            <div class="about-container">
-                <div class="about-description">
-                    <h2 class="about-title">About</h2>
-                    <p class="about-text">Hello there! I'm Ibragim, a <strong>Front-End Web developer</strong>
-                        from Ukraine, Odesa. </p>
-                    <p class="about-text"> I am currently pursuing a degree in computer science, my approach
-                        to learning in this field involves a combination of structured coursework and self-directed
-                        study. <br>
-                        For the past two years, I have been engaged in a dedicated journey of
-                        self-learning
-                        programming. This endeavor has been driven by my passion for technology and the desire to
-                        acquire practical skills in programming. </p>
-                    <p class="about-text">I have all skills to become your employee: communication abitilies, teamwork,
-                        easy problem solving, adaptability, leadership, time managment, critical thinking and more !
-                    </p>
-                </div>
-                <div class="title">
-                    <h2 class="tech-title">Technologies</h2>
-                    <div class="tech-container">
-                        <div><img class="tech-img" src="/html.svg" alt="HTML"></a> </div>
-                        <div><img class="tech-img" src="/css.svg" alt="CSS"></div>
-                        <div><img class="tech-img" src="/js.svg" alt="JS"></div>
-                        <div><img class="tech-img" src="/react.svg" alt="react"></div>
-                        <div><img class="tech-img" src="/boot .svg" alt="bootstrap"></div>
-                        <div><img class="tech-img" src="/figma.svg" alt="figma"></div>
-                        <div><img class="tech-img" src="/tailcss.svg" alt="tailcss"></div>
-                        <div><img class="tech-img" src="/vs.svg" alt="vscode"></div>
-                        <div><img class="tech-img" src="/github.svg" alt="github"></div>
-                        <div><img class="tech-img" src="/stack.svg" alt="stack"></div>
-                        <div><img class="tech-img" src="/git.svg" alt="git"></div>
-                        <div><img class="tech-img" src="/ds.svg" alt="discord"></div>
-                    </div>
-                </div>
+            <p class="about-text">
+              I am currently pursuing a degree in computer science, my approach
+              to learning in this field involves a combination of structured
+              coursework and self-directed study. <br />
+              For the past two years, I have been engaged in a dedicated journey
+              of self-learning programming. This endeavor has been driven by my
+              passion for technology and the desire to acquire practical skills
+              in programming.
+            </p>
+            <p class="about-text">
+              I have all skills to become your employee: communication
+              abitilies, teamwork, easy problem solving, adaptability,
+              leadership, time managment, critical thinking and more !
+            </p>
+          </div>
+          <div class="title">
+            <h2 class="tech-title">Technologies</h2>
+            <div class="tech-container">
+              <div><img class="tech-img" src="/html.svg" alt="HTML" /></div>
+              <div><img class="tech-img" src="/css.svg" alt="CSS" /></div>
+              <div><img class="tech-img" src="/js.svg" alt="JS" /></div>
+              <div><img class="tech-img" src="/react.svg" alt="react" /></div>
+              <div>
+                <img class="tech-img" src="/boot .svg" alt="bootstrap" />
+              </div>
+              <div><img class="tech-img" src="/figma.svg" alt="figma" /></div>
+              <div>
+                <img class="tech-img" src="/tailcss.svg" alt="tailcss" />
+              </div>
+              <div><img class="tech-img" src="/vs.svg" alt="vscode" /></div>
+              <div><img class="tech-img" src="/github.svg" alt="github" /></div>
+              <div><img class="tech-img" src="/stack.svg" alt="stack" /></div>
+              <div><img class="tech-img" src="/git.svg" alt="git" /></div>
+              <div><img class="tech-img" src="/ds.svg" alt="discord" /></div>
             </div>
-            <div>
-                <h2 class="about-subtitle">All the abitilies I possess</h2>
-                <div class="about-ul_container">
-                    <ul class="about-ul">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript(ES6+)</li>
-                        <li>React , ReactJS</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <ul class="about-ul">
-                        <li>TailwindCSS</li>
-                        <li>Figma</li>
-                        <li>VS Studio</li>
-                        <li>Github</li>
-                        <li>Git</li>
-                    </ul>
-                    <ul class="about-ul">
-                        <li>Stackoverflow</li>
-                        <li>B2 English</li>
-                        <li>Native Ukranian</li>
-                        <li>Native Russian</li>
-                        <li>Communication</li>
-                    </ul>
-                </div>
-        </section>
+          </div>
+        </div>
+        <div>
+          <h2 class="about-subtitle">All the abitilies I possess</h2>
+          <div class="about-ul_container">
+            <ul class="about-ul">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript(ES6+)</li>
+              <li>React , ReactJS</li>
+              <li>Bootstrap</li>
+            </ul>
+            <ul class="about-ul">
+              <li>TailwindCSS</li>
+              <li>Figma</li>
+              <li>VS Studio</li>
+              <li>Github</li>
+              <li>Git</li>
+            </ul>
+            <ul class="about-ul">
+              <li>Stackoverflow</li>
+              <li>B2 English</li>
+              <li>Native Ukranian</li>
+              <li>Native Russian</li>
+              <li>Communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section id="featured" class="featured container ">
-            <h3 class="featured-subtitle">Featured project</h3>
-            <div class="featured-wrapper">
-                <h2 class="featured-title">Name of the project</h2>
-                <a aria-label="link to future web" class="featured-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                    </svg>
-                </a>
-            </div>
-            <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit animi
-                accusantium. Mollitia, veniam quidem sapiente minima accusantium inventore, doloribus velit reiciendis
-                eos dignissimos enim nemo aliquam, et doloremque consequuntur saepe. Sequi porro, placeat totam minus
-                ducimus, ratione quae ullam id nulla numquam aut dolore voluptates magnam fugiat cupiditate iusto.</p>
-            <div class="featured-info_container">
-                <div>
-                    <h3 class="featured-label">Tech stack</h3>
-                    <ul class="featured-tech_stack">
-                        <li class="featured-info">TailwindCSS</li>
-                        <li class="featured-info">TailwindCSS</li>
-                        <li class="featured-info">TailwindCSS</li>
-                        <li class="featured-info">TailwindCSS</li>
-                        <li class="featured-info">TailwindCSS</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="featured-label">Project type</h3>
-                    <p class="featured-info">Fullstack</p>
-                </div>
-                <div>
-                    <h3 class="featured-label">Timeline</h3>
-                    <p class="featured-info">Future - present</p>
-                </div>
-            </div>
-            <div class="featured-img_container">
-                <div class="featured-img_wrapper">
-                    <img src="/First screen.png" alt="Project">
-                </div>
-                <div class="featured-img_wrapper">
-                    <img src="/Second screen.png" alt="Project">
-                </div>
-                <div class="featured-img_wrapper">
-                    <img src="/First screen.png" alt="Project">
-                </div>
-                <div class="featured-img_wrapper">
-                    <img src="/Second screen.png" alt="Project">
-                </div>
-                <!-- <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt=""> -->
-            </div>
-        </section>
-        <section class="work container section">
-            <h2 class="work-title">Projects</h2>
-            <p class="work-description">Here you can find my best projects!</p>
-            <div class="work-container">
-                <!-- project one -->
-                <h3 class="work-project_title">Timetable</h3>
-                <div class="work-img_wrapper work-image1">
-                    <img src="/timetable.png" alt="Timetable">
-                </div>
-                <div class="work-project work-content1">
-                    <h3 class="work-project_subtitle">Timetable</h3>
-                    <p class="work-project_description1">My first project - group timetable!</p>
-                    <p class="work-project_description2">Technologies I used here: lmao hard one</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
-                <!-- project two -->
-                <h3 class="work-project_title">My portfolio</h3>
-                <div class="work-img_wrapper work-image2">
-                    <img src="/First screen.png" alt="Portfolio">
-                </div>
-                <div class="work-project  work-content2">
-                    <h3 class="work-project_subtitle">My portfolio</h3>
-                    <p class="work-project_description1">Some important things here</p>
-                    <p class="work-project_description2">Technologies I used here: Vite ,</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
+      <section id="featured" class="featured container">
+        <h3 class="featured-subtitle">Featured project</h3>
+        <div class="featured-wrapper">
+          <h2 class="featured-title">Forkify</h2>
+          <a
+            aria-label="link to future web"
+            class="featured-link"
+            href="https://forkrecipes.netlify.app/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured-description">
+          The Forkify web application implements the Model-View-Controller (MVC)
+          architecture for convenient and efficient management of the program's
+          logic and presentation. The Model contains data about recipes and
+          prepared dishes. The View is responsible for displaying this data and
+          interacting with the user through the interface. The Controller
+          coordinates the interaction between the Model and the View, handling
+          input data and performing necessary actions. Additionally, the Forkify
+          website is implemented using an object-oriented approach (OOP) in
+          JavaScript to enhance code readability, support, and scalability. This
+          allows for easy management of complex object relationships and ensures
+          modularity and code reusability. The Forkify web application features
+          functions that allow users to search, view, save recipes, and create
+          their own recipes. Interactivity with the user is provided through
+          interaction with the interface and the ability to edit recipes.
+        </p>
+        <div class="featured-info_container">
+          <div>
+            <h3 class="featured-label">Tech stack</h3>
+            <ul class="featured-tech_stack">
+              <li class="featured-info">HTML</li>
+              <li class="featured-info">SASS</li>
+              <li class="featured-info">JavaScript</li>
+              <li class="featured-info">Vite</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured-label">Project type</h3>
+            <p class="featured-info">Web application</p>
+          </div>
+          <div>
+            <h3 class="featured-label">Timeline</h3>
+            <p class="featured-info">Finished</p>
+          </div>
+        </div>
+        <div class="featured-img_container">
+          <div class="featured-img_wrapper">
+            <img src="/First_screen.png" alt="Project" />
+          </div>
+          <div class="featured-img_wrapper">
+            <img src="/Second_screen.png" alt="Project" />
+          </div>
+          <div class="featured-img_wrapper">
+            <img src="/Third_screen.png" alt="Project" />
+          </div>
+          <div class="featured-img_wrapper">
+            <img src="/Fourth_screen.png" alt="Project" />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work-title">Projects</h2>
+        <p class="work-description">Here you can find my best projects!</p>
+        <div class="work-container">
+          <!-- project one -->
+          <div class="work-img_wrapper work-image1">
+            <img src="/Project-1_preview.png" alt="Project" />
+          </div>
+          <div class="work-project work-content1">
+            <h3 class="work-project_subtitle">Engineering portfolio</h3>
+            <p class="work-project_description1">
+              Simple Astro project with some magic!
+            </p>
+            <p class="work-project_description2">
+              Technologies I used here: Astro, Markdowns
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://test-astro-portoflio.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- project two -->
+          <div class="work-img_wrapper work-image2">
+            <img src="/Project-2_preview.png" alt="Project" />
+          </div>
+          <div class="work-project work-content2">
+            <h3 class="work-project_subtitle">Architecture website</h3>
+            <p class="work-project_description1">Multipage website with OOP</p>
+            <p class="work-project_description2">
+              Technologies I used here: Vite, JS
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://architecture-digital.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
 
-                <!-- project three -->
-                <h3 class="work-project_title">Some other web I will build</h3>
-                <div class="work-img_wrapper work-image3">
-                    <img src="/Second screen.png" alt="Portfolio">
-                </div>
-                <div class="work-project  work-content3">
-                    <h3 class="work-project_subtitle">Something</h3>
-                    <p class="work-project_description1">Some important things here</p>
-                    <p class="work-project_description2">Technologies I used here: Vite ,</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
+          <!-- project three -->
+          <div class="work-img_wrapper work-image3">
+            <img src="/Project-3_preview.png" alt="Portfolio" />
+          </div>
+          <div class="work-project work-content3">
+            <h3 class="work-project_subtitle">Bankist minimalist</h3>
+            <p class="work-project_description1">
+              Simple website with JS magic!
+            </p>
+            <p class="work-project_description2">
+              Technologies I used here: JS
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://ai-225-timetable.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
 
-                <!-- project four -->
-                <h3 class="work-project_title">My portfolio</h3>
-                <div class="work-img_wrapper work-image4">
-                    <img src="/First screen.png" alt="Portfolio">
-                </div>
-                <div class="work-project  work-content4">
-                    <h3 class="work-project_subtitle">Something</h3>
-                    <p class="work-project_description1">Some important things here</p>
-                    <p class="work-project_description2">Technologies I used here: Vite ,</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
+          <!-- project four -->
+          <!-- <h3 class="work-project_title">My portfolio</h3>
+          <div class="work-img_wrapper work-image4">
+            <img src="/First screen.png" alt="Portfolio" />
+          </div>
+          <div class="work-project work-content4">
+            <h3 class="work-project_subtitle">Something</h3>
+            <p class="work-project_description1">Some important things here</p>
+            <p class="work-project_description2">
+              Technologies I used here: Vite ,
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://ai-225-timetable.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div> -->
 
-                <!-- project five -->
-                <h3 class="work-project_title">Some other web I will build</h3>
-                <div class="work-img_wrapper work-image5">
-                    <img src="/Second screen.png" alt="Portfolio">
-                </div>
-                <div class="work-project work-content5">
-                    <h3 class="work-project_subtitle">Something</h3>
-                    <p class="work-project_description1">Some important things here</p>
-                    <p class="work-project_description2">Technologies I used here: Vite ,</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
+          <!-- project five -->
+          <!-- <h3 class="work-project_title">Some other web I will build</h3>
+          <div class="work-img_wrapper work-image5">
+            <img src="/Second screen.png" alt="Portfolio" />
+          </div>
+          <div class="work-project work-content5">
+            <h3 class="work-project_subtitle">Something</h3>
+            <p class="work-project_description1">Some important things here</p>
+            <p class="work-project_description2">
+              Technologies I used here: Vite ,
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://ai-225-timetable.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div> -->
 
-                <!-- project six -->
-                <h3 class="work-project_title">Some other web I will build</h3>
-                <div class="work-img_wrapper work-image6">
-                    <img src="/Second screen.png" alt="Portfolio">
-                </div>
-                <div class="work-project  work-content6">
-                    <h3 class="work-project_subtitle">Something</h3>
-                    <p class="work-project_description1">Some important things here</p>
-                    <p class="work-project_description2">Technologies I used here: Vite ,</p>
-                    <a class="btn work-prohect_btn" href="https://ai-225-timetable.netlify.app/"
-                        target="_blank">Website</a>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="contact container section">
-            <h2 class="contact-title">Get In Contact</h2>
-            <p class="contact-description">Whether you are starting a project, have business inquiries or just want to
-                say hi, my inbox is always open so feel free to reach out and I will get back to you as soon as
-                possible. </p>
-            <div class="contact-img">
-                <a href="mailto:igrimanigroman@gmail.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                        <path d="M3 7l9 6l9 -6" />
-                    </svg>
-                </a>
-                <a href="https://github.com/Marve10s" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
-                </a>
-                <a href="https://t.me/TheCr1nge" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram"
-                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/_just._.him_/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                        <path d="M16.5 7.5l0 .01" />
-                    </svg>
-                </a>
-            </div>
-        </section>
+          <!-- project six -->
+          <!-- <h3 class="work-project_title">Some other web I will build</h3>
+          <div class="work-img_wrapper work-image6">
+            <img src="/Second screen.png" alt="Portfolio" />
+          </div>
+          <div class="work-project work-content6">
+            <h3 class="work-project_subtitle">Something</h3>
+            <p class="work-project_description1">Some important things here</p>
+            <p class="work-project_description2">
+              Technologies I used here: Vite ,
+            </p>
+            <a
+              class="btn work-prohect_btn"
+              href="https://ai-225-timetable.netlify.app/"
+              target="_blank"
+              >Website</a
+            >
+          </div> -->
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact-title">Get In Contact</h2>
+        <p class="contact-description">
+          Whether you are starting a project, have business inquiries or just
+          want to say hi, my inbox is always open so feel free to reach out and
+          I will get back to you as soon as possible.
+        </p>
+        <div class="contact-img">
+          <a href="mailto:igrimanigroman@gmail.com" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-mail"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fd0061"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+              />
+              <path d="M3 7l9 6l9 -6" />
+            </svg>
+          </a>
+          <a href="https://github.com/Marve10s" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-github"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fd0061"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+          <a href="https://t.me/TheCr1nge" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-telegram"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fd0061"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/_just._.him_/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="44"
+              height="44"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fd0061"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+          </a>
+        </div>
+      </section>
     </main>
     <footer class="footer container section">
-        <h3 class="footer-title">Ibragim Elkamali</h3>
+      <h3 class="footer-title">Ibragim Elkamali</h3>
     </footer>
     <script type="module" src="./src/main.js"></script>
-</body>
-
+  </body>
 </html>
